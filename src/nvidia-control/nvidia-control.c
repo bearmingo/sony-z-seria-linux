@@ -1,3 +1,6 @@
+#include <linux/kernel.h>
+#include <linux/module.h>
+#include <linux/moduleparam.h>
 #include <linux/acpi.h>
 #include <acpi/acpi_drivers.h>
 #include <acpi/acpi_bus.h>
@@ -120,5 +123,4 @@ MODULE_DEVICE_TABLE(pci, pci_ids);
 
 module_init(nvidia_control_init);
 module_exit(nvidia_control_exit);
-
 MODULE_LICENSE("GPL");
